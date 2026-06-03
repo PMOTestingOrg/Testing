@@ -12,7 +12,7 @@
 # Save and commit. The dashboard will start aggregating within 5 minutes.
 
 project:
-  slug: Testing
+  slug: project-Testing
   # Used as the GitHub label "project:<slug>"
   # Must be kebab-case, short, unique across all PMO projects
   # Examples: portal-redesign, auth-migration, billing-v2
