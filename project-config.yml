@@ -12,12 +12,12 @@
 # Save and commit. The dashboard will start aggregating within 5 minutes.
 
 project:
-  slug: REPLACE-ME-WITH-PROJECT-SLUG
+  slug: Testing
   # Used as the GitHub label "project:<slug>"
   # Must be kebab-case, short, unique across all PMO projects
   # Examples: portal-redesign, auth-migration, billing-v2
 
-  display_name: "REPLACE ME — Human-Readable Project Name"
+  display_name: Testing
   # Shown in dashboard headings; can have spaces and capitals
 
 # ─────────────────────────────────────────────────────────────────
@@ -26,7 +26,7 @@ project:
 # Format: owner/repo (matching GitHub URL path)
 # Multiple PMO projects can share a repo (e.g., shared services).
 
-linked_repos: []
+linked_repos: PMOTestingOrg/development
   # Example:
   # - your-org/customer-portal-backend
   # - your-org/customer-portal-frontend
@@ -65,7 +65,10 @@ surfacing:
 #   - code_milestone:  Auto-marks "Ready to invoice" when ALL listed code repos have
 #                      closed a milestone with the given name.
 
-invoice_triggers: []
+invoice_triggers: 
+   - milestone: "Invoice 1 — BRD Sign-Off"
+     trigger:
+       type: pmo_milestone
   # Example:
   # - milestone: "Invoice 1 — BRD Sign-Off"
   #   trigger:
