@@ -26,7 +26,8 @@ project:
 # Format: owner/repo (matching GitHub URL path)
 # Multiple PMO projects can share a repo (e.g., shared services).
 
-linked_repos: PMOTestingOrg/development
+linked_repos: 
+    - PMOTestingOrg/development
   # Example:
   # - your-org/customer-portal-backend
   # - your-org/customer-portal-frontend
